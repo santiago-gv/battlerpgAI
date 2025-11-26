@@ -1,0 +1,187 @@
+{
+  "abilities": [
+    {
+      "name": "power_strike",
+      "display_name": "Power Strike",
+      "description": "Un golpe poderoso que causa gran daño",
+      "ability_type": "damage",
+      "cooldown": 1,
+      "priority": 0,
+      "required_class": null,
+      "effects": [
+        {
+          "effect_type": "damage",
+          "value": 50,
+          "status_effect": null,
+          "probability": 1.0,
+          "target": "opponent"
+        }
+      ]
+    },
+    {
+      "name": "quick_attack",
+      "display_name": "Quick Attack",
+      "description": "Ataque rápido con prioridad alta",
+      "ability_type": "damage",
+      "cooldown": 0,
+      "priority": 1,
+      "required_class": null,
+      "effects": [
+        {
+          "effect_type": "damage",
+          "value": 30,
+          "status_effect": null,
+          "probability": 1.0,
+          "target": "opponent"
+        }
+      ]
+    },
+    {
+      "name": "fireball",
+      "display_name": "Fireball",
+      "description": "Bola de fuego que causa daño y puede quemar",
+      "ability_type": "mixed",
+      "cooldown": 2,
+      "priority": 0,
+      "required_class": "mage",
+      "effects": [
+        {
+          "effect_type": "damage",
+          "value": 40,
+          "status_effect": null,
+          "probability": 1.0,
+          "target": "opponent"
+        },
+        {
+          "effect_type": "status",
+          "value": 0,
+          "status_effect": "burn",
+          "probability": 0.3,
+          "target": "opponent"
+        }
+      ]
+    },
+    {
+      "name": "poison_strike",
+      "display_name": "Poison Strike",
+      "description": "Ataque envenenado que aplica poison",
+      "ability_type": "mixed",
+      "cooldown": 2,
+      "priority": 0,
+      "required_class": "rogue",
+      "effects": [
+        {
+          "effect_type": "damage",
+          "value": 30,
+          "status_effect": null,
+          "probability": 1.0,
+          "target": "opponent"
+        },
+        {
+          "effect_type": "status",
+          "value": 0,
+          "status_effect": "poison",
+          "probability": 0.5,
+          "target": "opponent"
+        }
+      ]
+    },
+    {
+      "name": "shield_bash",
+      "display_name": "Shield Bash",
+      "description": "Golpe con escudo que puede aturdir",
+      "ability_type": "mixed",
+      "cooldown": 3,
+      "priority": 0,
+      "required_class": "tank",
+      "effects": [
+        {
+          "effect_type": "damage",
+          "value": 35,
+          "status_effect": null,
+          "probability": 1.0,
+          "target": "opponent"
+        },
+        {
+          "effect_type": "status",
+          "value": 0,
+          "status_effect": "stun",
+          "probability": 0.2,
+          "target": "opponent"
+        }
+      ]
+    },
+    {
+      "name": "heal",
+      "display_name": "Heal",
+      "description": "Restaura HP del usuario",
+      "ability_type": "heal",
+      "cooldown": 3,
+      "priority": 0,
+      "required_class": "support",
+      "effects": [
+        {
+          "effect_type": "heal",
+          "value": 40,
+          "status_effect": null,
+          "probability": 1.0,
+          "target": "self"
+        }
+      ]
+    },
+    {
+      "name": "battle_cry",
+      "display_name": "Battle Cry",
+      "description": "Aumenta el ataque del usuario",
+      "ability_type": "buff",
+      "cooldown": 4,
+      "priority": 0,
+      "required_class": null,
+      "effects": [
+        {
+          "effect_type": "status",
+          "value": 0,
+          "status_effect": "buff",
+          "probability": 1.0,
+          "target": "self"
+        }
+      ]
+    },
+    {
+      "name": "iron_defense",
+      "display_name": "Iron Defense",
+      "description": "Crea un escudo protector",
+      "ability_type": "buff",
+      "cooldown": 3,
+      "priority": 0,
+      "required_class": "tank",
+      "effects": [
+        {
+          "effect_type": "status",
+          "value": 0,
+          "status_effect": "shield",
+          "probability": 1.0,
+          "target": "self"
+        }
+      ]
+    },
+    {
+      "name": "intimidate",
+      "display_name": "Intimidate",
+      "description": "Reduce el ataque del oponente",
+      "ability_type": "debuff",
+      "cooldown": 3,
+      "priority": 0,
+      "required_class": null,
+      "effects": [
+        {
+          "effect_type": "status",
+          "value": 0,
+          "status_effect": "debuff",
+          "probability": 1.0,
+          "target": "opponent"
+        }
+      ]
+    }
+  ]
+}
